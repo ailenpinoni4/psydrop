@@ -7,20 +7,97 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+
   <header>
-    <div class="container">PSYDROP</div>
+    <div class="container header-content">
+      <div class="logo">PSYDROP</div>
+      <nav class="nav-menu">
+        <a href="#inicio">Inicio</a>
+        <a href="#tienda">Tienda</a>
+        <a href="#nosotros">Sobre Nosotros</a>
+        <a href="#contacto">Contacto</a>
+      </nav>
+      <div class="cart-icon">🛒 <span class="cart-count">0</span></div>
+    </div>
   </header>
 
-  <section class="hero">
-    <div class="container">
+  <section id="inicio" class="hero">
+    <div class="hero-content">
       <h1>Viste tu mente. Rompe la realidad.</h1>
-      <button class="btn" onclick="alert('¡Gracias por visitar!')">COMPRAR AHORA</button>
+      <p>Colección psicodélica 2025 — estampados exclusivos, telas suaves, actitud sin límites.</p>
+      <a href="#tienda" class="btn-primary">COMPRAR AHORA</a>
     </div>
   </section>
 
-  <footer>
+  <section id="tienda" class="products-section">
     <div class="container">
-      <p>© 2025 Psydrop — Hecho con ❤️ y fractales</p>
+      <h2>Novedades que te harán viajar 🌀</h2>
+      <div class="products-grid">
+        <div class="product-card">
+          <img src="https://via.placeholder.com/300x400/f957f9/FFFFFF?text=Hoodie+Fractal" alt="Hoodie Fractal Dreams">
+          <h3>Hoodie Fractal Dreams</h3>
+          <p class="price">$8.990</p>
+          <button class="btn-add" data-name="Hoodie Fractal Dreams" data-price="8990">+ Agregar</button>
+          <div class="reviews">
+            <span>⭐⭐⭐⭐☆</span> <small>(12 reseñas)</small>
+          </div>
+        </div>
+        <div class="product-card">
+          <img src="https://via.placeholder.com/300x400/00f5ff/121212?text=Camiseta+Neon" alt="Camiseta Neon Pulse">
+          <h3>Camiseta Neon Pulse</h3>
+          <p class="price">$6.500</p>
+          <button class="btn-add" data-name="Camiseta Neon Pulse" data-price="6500">+ Agregar</button>
+          <div class="reviews">
+            <span>⭐⭐⭐⭐⭐</span> <small>(28 reseñas)</small>
+          </div>
+        </div>
+        <div class="product-card">
+          <img src="https://via.placeholder.com/300x400/ccff00/121212?text=Pantalon+Acid" alt="Pantalón Acid Rain">
+          <h3>Pantalón Acid Rain</h3>
+          <p class="price">$9.200</p>
+          <button class="btn-add" data-name="Pantalón Acid Rain" data-price="9200">+ Agregar</button>
+          <div class="reviews">
+            <span>⭐⭐⭐⭐☆</span> <small>(9 reseñas)</small>
+          </div>
+        </div>
+        <div class="product-card">
+          <img src="https://via.placeholder.com/300x400/9d00ff/FFFFFF?text=Gorra+Trip" alt="Gorra Trip Master">
+          <h3>Gorra Trip Master</h3>
+          <p class="price">$4.800</p>
+          <button class="btn-add" data-name="Gorra Trip Master" data-price="4800">+ Agregar</button>
+          <div class="reviews">
+            <span>⭐⭐⭐⭐⭐</span> <small>(41 reseñas)</small>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="nosotros" class="about-section">
+    <div class="container">
+      <h2>Somos Psydrop. Tu vibra, tu ropa.</h2>
+      <p>Nacimos en el caos creativo de las calles, con ganas de vestir almas libres. No seguimos tendencias — las creamos. Con algodón orgánico, tintes que no dañan la tierra, y diseños que nacen de viajes mentales reales.</p>
+      <p><strong>Misión:</strong> Que cada prenda sea un portal a tu yo más auténtico.<br>
+         <strong>Valores:</strong> Sostenibilidad, comunidad, creatividad sin permiso.</p>
+    </div>
+  </section>
+
+  <section id="contacto" class="contact-section">
+    <div class="container">
+      <h2>¿Tenés dudas? Escribinos, te leemos con buena onda 🌈</h2>
+      <form class="contact-form" id="contactForm">
+        <input type="text" placeholder="Tu nombre" required>
+        <input type="email" placeholder="Tu email" required>
+        <textarea placeholder="Tu mensaje" rows="5" required></textarea>
+        <button type="submit" class="btn-primary">ENVIAR MENSAJE</button>
+      </form>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <p>© 2025 Psydrop — Ropa que sientes, no solo que ves.</p>
+      <p>Hecho con ❤️ y fractales en Argentina</p>
     </div>
   </footer>
 
