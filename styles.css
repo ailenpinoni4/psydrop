@@ -19,11 +19,20 @@ body {
 }
 
 /* HEADER */
+.header {
+  background: rgba(18,18,18,0.95);
+  padding: 1rem 0;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+  border-bottom: 2px solid #FF00A0;
+}
+
 .header-content {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem 0;
 }
 
 .logo {
